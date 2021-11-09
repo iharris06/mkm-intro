@@ -8,7 +8,14 @@
 }
 
 .App-header {
-  background-color: #FFECFC;
+  background-image: 
+    linear-gradient(to left,transparent, rgba(232, 199, 200, 0.879) 100%),
+     /* linear-gradient(to right,transparent, rgba(250, 192, 203, 0.865) 300%), */
+    /* linear-gradient(to left,transparent, rgba(255,250,205, 0.879) 100%),
+    linear-gradient(to right,transparent, rgba(255,250,205, 0.865) 300%), */
+    url(./michelle.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: right;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,24 +26,31 @@
 
 .title {
   position: absolute;
-  top: 10%;
+  top: 2.5%;
   left: 20%;
   transform: translate(-50%, -50%);
-  color: #FFFFFF
+  color: #FFFFFF;
+  font-family: 'Parisienne';
+  font-size: 6rem;
 }
 
-.title {
+.title-2 {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 20%;
   transform: translate(-50%, -50%);
-  color: #FFFFFF
+  color: #FFFFFF;
+  font-family: 'Assistant';
+  font-size: 5rem;
 }
-/* 
-body {
-  background-color: #837960;
-  background-image: linear-gradient(
-    to bottom, transparent, #837960
-  ), url("Images/background.jpg");
-  background-repeat: no-repeat;
-} */
+
+div .social {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 80%;
+}
+
+.social {
+  margin: .25rem;
+}
