@@ -1,54 +1,40 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to top,transparent, rgba(232, 199, 200, 0.879) 100%);
 }
 
 .App-logo {
-  height: 100vmin;
-  pointer-events: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-header {
-  background-image: 
-    linear-gradient(to left,transparent, rgba(232, 199, 200, 0.879) 100%),
-     /* linear-gradient(to right,transparent, rgba(250, 192, 203, 0.865) 300%), */
-    /* linear-gradient(to left,transparent, rgba(255,250,205, 0.879) 100%),
-    linear-gradient(to right,transparent, rgba(255,250,205, 0.865) 300%), */
-    url(./michelle.svg);
-  background-repeat: no-repeat, repeat;
-  background-position: right;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.title {
+ div .title {
   position: absolute;
   top: 2.5%;
-  left: 20%;
+  left: 22%;
   transform: translate(-50%, -50%);
   color: #FFFFFF;
   font-family: 'Parisienne';
-  font-size: 6rem;
+  column-span: 2;
 }
 
-.title-2 {
+div .subtitle {
   position: absolute;
-  top: 15%;
-  left: 20%;
+  top: 12%;
+  left: 22%;
   transform: translate(-50%, -50%);
   color: #FFFFFF;
   font-family: 'Assistant';
-  font-size: 5rem;
+  column-span: 2;
 }
 
-div .social {
+.social-box {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 10%;
   left: 80%;
+  column-span: 1;
 }
 
 .social {
