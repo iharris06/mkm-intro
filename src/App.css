@@ -1,6 +1,6 @@
-.App {
+body {
   text-align: center;
-  background-image: linear-gradient(to top,transparent, rgba(232, 199, 200, 0.879) 100%);
+  background-color: black;
 }
 
 .App-logo {
@@ -9,24 +9,21 @@
   margin-right: auto;
 }
 
- div .title {
+.title-bar {
   position: absolute;
-  top: 2.5%;
+  top: 10%;
   left: 22%;
   transform: translate(-50%, -50%);
-  color: #FFFFFF;
-  font-family: 'Parisienne';
-  column-span: 2;
 }
 
-div .subtitle {
-  position: absolute;
-  top: 12%;
-  left: 22%;
-  transform: translate(-50%, -50%);
+ .title {
+  color: #FFFFFF;
+  font-family: 'Parisienne';
+}
+
+.subtitle {
   color: #FFFFFF;
   font-family: 'Assistant';
-  column-span: 2;
 }
 
 .social-box {
@@ -39,4 +36,28 @@ div .subtitle {
 
 .social {
   margin: .25rem;
+}
+
+/* Responsive Design for mobile */
+@media only screen and (max-width: 1024px) {
+  .social-box {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 100%;
+  }
+
+  .title-bar {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 100%;
+  }
+
+
+  .image {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+  }
 }
